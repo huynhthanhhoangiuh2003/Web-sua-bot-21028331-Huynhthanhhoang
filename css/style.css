@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Pacifico&family=Tilt+Neon&display=swap");
+
+*,
+html {
+  font-family: "ABeeZee", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-family: "Tilt Neon", sans-serif;
+}
+.dropdown-menu-login {
+  margin-top: 32px !important;
+  right: 5% !important;
+}
+.nav-link {
+  font-size: 17px !important;
+}
+
+ /* --------------------------------Footer------------------------------------ */
+#footer{
+  color: black;
+  background-color: #703f07;
+  margin-top: 50px;
+}
+
+.footer-text-start {
+  padding: 20px 0px;
+  font-weight: bold;
+}
+
+.footer-text-start li a{
+  color: black;
+  text-decoration: unset;
+}
+
+.footer-text-start img {
+  padding-bottom: 20px;
+}
+
+.footer-text-start h5 {
+  font-size: 25px;
+  color: #f0c76e;
+}
+
+.footer-top-flex {
+  display: flex;
+}
+
+.footer-top-flex i {
+  padding-right: 10px;
+}
+.footer-top-hover{
+  padding: 0;
+}
+
+.footer-top-hover a:hover{
+  color: #f0c76e;
+}
+
+.footer-top-hover li {
+  padding: 10px 0px;
+}
+
+li {
+  list-style: none;
+}
+
+/* footer end

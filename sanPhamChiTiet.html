@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sản phẩm chi tiết</title>
+  <link rel="shortcut icon" type="image" href="./image/logo.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="js/chiTietSP.js"></script>
+  <script src="./js/data.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./trangChu.html" id="logo"><img src="./image/logo.png" alt=""
+          width="50px" />Milk</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./trangChu.html">Trang chủ</a>
+          </li>
+          <li class="nav-item dropdown px-2">
+            <div class="btn-group">
+              <a class="nav-link px-1" href="./sanPham.html">
+                Sản phẩm
+              </a>
+              <div type="button" class="dropdown-toggle dropdown-toggle-split p-0 pt-2 btn-lg" data-bs-toggle="dropdown"
+                aria-expanded="false">
+
+              </div>
+              <ul class="dropdown-menu bg-info-subtle" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./sanPham.html#abbottGrow">Sữa Abbott grow</a></li>
+                <li><a class="dropdown-item" href="./sanPham.html#bubs">Sữa Bubs</a></li>
+                <li><a class="dropdown-item" href="./sanPham.html#colosbaby">Sữa Colosbaby</a></li>
+                <li><a class="dropdown-item" href="./sanPham.html#frisolac">Sữa Frisolac</a></li>
+                <li><a class="dropdown-item" href="./sanPham.html#meiji">Sữa Meiji</a></li>
+                <li><a class="dropdown-item" href="./sanPham.html#vinamilk">Sữa Vinamilk</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./thongTin.html">Thông tin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./lienHe.html">Liên hệ</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2 w-auto" type="search" placeholder="Nhập từ bạn cần tìm" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Tìm kiếm
+          </button>
+        </form>
+        <a href="./datHang.html"><img class="mx-1" style="cursor: pointer;" src="./image/add.png" alt=""
+            width="25px"></a>
+        <div class="dropstart mx-1">
+          <img class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+            src="./image/user.png" alt="" width="25px">
+          <ul class="dropdown-menu dropdown-menu-login bg-info-subtle">
+            <li><a class="dropdown-item" href="./dangNhap.html">Đăng nhập</a></li>
+            <li><a class="dropdown-item" href="./dangKy.html">Đăng ký</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- hiển thị thông tin sản phẩm chi tiết -->
+  <section id="info" class="mt-5 mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 border-right" style="margin-right: 50px;">
+          <div id="ha"><img src="./image/anhsp1.png" alt="#" style="width: 300px;"></div>
+        </div>
+        <div class="col-md-6">
+          <div class="row border-bottom">
+            <h2 id="tensp" class="col-md-12">Tên sản phẩm</h2>
+          </div>
+          <div class="row">
+            <p class="col-md-2">Giá: </p>
+            <div class="col-md-10" style="display: flex;">
+              <div id="dongia">100.000</div> <span>₫</span>
+            </div>
+          </div>
+          <div class="row">
+            <p class="col-md-2">Kho: </p>
+            <div class="col-md-10">Còn hàng</div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">Mô tả sản phẩm</div>
+            <div class="col-md-8"></div>
+            <div id="mota">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, magni? Aut exercitationem facere porro
+              illum soluta cupiditate, ad voluptatum eveniet reprehenderit quisquam, temporibus optio nostrum ab quas ea
+              reiciendis. Expedita?
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-12">
+              <!-- click đặt hàng  -->
+              <button onclick="datHang()" type="button" class="btn btn-primary" id="dathang">Đặt hàng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- kết thúc hiển thị thông tin sản phẩm chi tiết -->
+
+  <div class="container text-center mb-5">
+    <h2 class="mt-4"> Sản phẩm nổi bật</h2>
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 100%;">
+          <div class="d-flex justify-content-center"><img src="./image/anhSP1.png" class="card-img-top"
+              style="width: 150px; height: 250px;"></div>
+          <div class="card-body">
+            <h5 class="card-title">Sữa Abbott Grow</h5>
+            <p class="card-text">Thực phẩm bổ sung cho trẻ từ 2 tuổi trở lên</p>
+            <div class="d-flex justify-content-between px-5">
+              <p class="price">117000đ</p> <button class="btn btn-primary" onclick="setMasp(1)">Xem thêm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 100%;">
+          <div class="d-flex justify-content-center"><img src="./image/anhSP2.png" class="card-img-top"
+              style="width: 150px; height: 250px;"></div>
+          <div class="card-body">
+            <h5 class="card-title">Sữa Enfagrowa</h5>
+            <p class="card-text">Thực phẩm bổ sung cho trẻ từ 2 tuổi trở lên</p>
+            <div class="d-flex justify-content-between px-5">
+              <p class="price">122000đ</p> <button class="btn btn-primary" onclick="setMasp(2)">Xem thêm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 100%;">
+          <div class="d-flex justify-content-center"><img src="./image/anhSP3.png" class="card-img-top"
+              style="width: 150px; height: 250px;"></div>
+          <div class="card-body">
+            <h5 class="card-title">Sữa Similac</h5>
+            <p class="card-text">Thực phẩm bổ sung cho trẻ từ 2 tuổi trở lên</p>
+            <div class="d-flex justify-content-between px-5">
+              <p class="price">144000đ</p> <button class="btn btn-primary" onclick="setMasp(3)">Xem thêm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-5 bg-primary-subtle">
+    <img src="./image/bannerFooter.png" style="width: 100%;" />
+  </div>
+
+  <footer>
+    <div class="footer-top bg-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-text-start">
+            <img src="./image/logo.png" alt="" width="50px">
+            <div class="address footer-top-flex">
+              <i class="fas fa-home" style="color: #eee;"></i>
+              <p style="color: #eee;">
+                xxxx
+                <br>
+                xxxxxxx
+              </p>
+            </div>
+            <div class="phone footer-top-flex" style="color: #eee;">
+              <i class="fas fa-phone-alt"></i>
+              <p style="color: #eee;">0123456789</p>
+            </div>
+            <div class="gmail footer-top-flex footer-top-hover">
+              <i class="far fa-clock" style="color: #eee;"></i>
+              <p><a href="#" style="color: #eee; text-decoration: none;">xxxxxxx@gmail.com</a></p>
+            </div>
+            <div class="footer-top-logo">
+              <ul class="footer-top-flex footer-top-hover">
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/luc.nguyen.568294"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 footer-text-start">
+            <h5>Hỗ trợ</h5>
+            <ul class="footer-top-hover">
+              <li><a href="#">Giao hàng</a></li>
+              <li><a href="#">Đơn đặt hàng</a></li>
+              <li><a href="#">Quan tâm</a></li>
+              <li><a href="#">Hoàn tiền và trả lại</a></li>
+              <li><a href="#">Danh mục đầu tư</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-text-start">
+            <h5>Thông tin</h5>
+            <ul class="footer-top-hover">
+              <li><a href="#">Cụm từ tim kiếm</a></li>
+              <li><a href="#">Tìm kiếm nâng cao</a></li>
+              <li><a href="#">Trợ giúp và hỏi đáp</a></li>
+              <li><a href="#">Vị trí cửa hàng</a></li>
+              <li><a href="#">Đặt hàng và trả lại</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-text-start">
+            <h5>Giúp đỡ</h5>
+            <ul class="footer-top-hover">
+              <li><a href="">Tìm kiếm</a></li>
+              <li><a href="">Giúp đỡ</a></li>
+              <li><a href="">Thông tin</a></li>
+              <li><a href="">Chính sách bảo mật</a></li>
+              <li><a href="">Chi tiết vận chuyển</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+</body>
+<script>
+  function setMasp(masp) {
+    localStorage.setItem("masp", masp);
+    window.location.href = "sanPhamChiTiet.html";
+  }
+</script>
+
+</html>
